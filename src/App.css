@@ -1,0 +1,57 @@
+
+
+.navbar {
+ width: 100%;
+ max-height: 100%;
+  box-shadow:0.2vw 0.2vw 0.2vw 0.2vw #68686e98;
+  background-color:hsla(236, 15%, 55%, 0.774);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
+
+
+.navbar .option{
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 1vw 1vw;
+  font-size: 1.2vw;
+  text-decoration: dotted;
+}
+
+.navbar .option .link{
+ color: rgb(0, 0, 0);
+ text-decoration: none;
+}
+
+.navbar .option{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+ }
+
+.navbar .option:hover {
+  background-color: #2c55ad;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.socials{
+   float: right;
+   width: 40%;
+}
+
+.socials a img{
+  margin-top: 1%;
+  height: 3vw;
+  float: right;
+  margin-left: 16%;
+  margin-right: 25px;
+}
+
+
+

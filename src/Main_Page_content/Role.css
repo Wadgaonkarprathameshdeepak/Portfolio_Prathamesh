@@ -1,0 +1,29 @@
+.role {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    
+   
+  }
+  
+  .resume-button {
+    padding: 10px 20px;
+    background-color: #22276b; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 2.5rem; /* Optional: add a rounded border */
+    cursor: pointer;
+    font-size: 1.5vw; /* Add a pointer on hover */
+    font-size: larger;
+    margin-bottom: 2%;
+  }
+  
+  .resume-button:hover {
+    background-color: #12d3da; /* Darker green on hover */
+  }
+  .about{
+    color: #0eeff7;
+  }
+.main{
+  background-color: #22276b;
+}

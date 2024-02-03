@@ -1,0 +1,98 @@
+
+.Project-main .heading{
+        color: rgb(45, 223, 214);
+    width: 100%;
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+}
+
+.Project-main{
+    background-color: #22276b;
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    flex-wrap: wrap;
+    gap:1%;
+    justify-content: space-evenly;
+    max-height: 100vh;
+    overflow-x: hidden;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    align-content: center;
+}
+
+
+.Project-main .project{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 1% 3% 1% 2%;
+    margin-top: 3vw;
+    align-items: center;
+    overflow: hidden;
+    
+    font-weight: bold;
+    width: 15%;
+    height: auto;
+    border-radius: 0.2vw;
+    box-shadow:0.3vw 0.2vw 0.2vw 0.2vw #9b909098;
+    margin-bottom: 3%;
+    .button{
+        color: #22276b;
+    }
+}
+
+.Project-main .project:hover{
+    transform: scale(1.03);
+    background-color: #fcf8f8;
+    box-shadow:0.4vw 0.2vw 0.2vw 0.2vw #ffc3c3f5;  
+}
+
+.Project-main .project .title{
+    text-align: center;
+    margin-top: 4%;
+    font-size: 1.4vw;
+    width: 100%;
+}
+
+.Project-main .project .info {
+    padding: 5% ;
+    font-size: 1vw;
+    text-align: center;
+    color: #4C393D;
+    
+}
+
+.Project-main .project  a img{
+    width: 100%;
+    height: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-style: solid;
+   border-color: #f0f0f0;
+   border-radius: 3%;
+}
+.Project-main .button{
+    margin: 8px;
+    background-color: #22276b;
+}
+.button-container button {
+    background-color: #22276b;
+    margin-top: 15px;
+    margin-right: 8px;
+    padding: 1px 2px;
+    font-size: 0.4em;
+    color: white;
+    height: 1rem;
+width: 1rem;
+    /* Your other button styles here */
+  }
+  
+  .button-container button:hover {
+    background-color: rgb(48, 227, 240);
+    cursor: pointer;
+  }
+ 
+  

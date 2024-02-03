@@ -1,0 +1,9 @@
+.footer{
+    background-color:  hsl(48, 100%, 94%);
+     width: 100%;
+    text-align: center;
+    font-size: 1.2vw;
+    height:1.5vw;
+    bottom: 0;
+    
+}

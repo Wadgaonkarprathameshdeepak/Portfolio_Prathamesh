@@ -1,0 +1,55 @@
+.skills-container .heading{
+  color: #0eeff7;
+  width: 100%;
+  font-size: 2vw;
+  margin-top: 5%;
+  text-align: center;
+  padding-top: 0.3%;
+  padding-bottom: 0.33%;
+}
+.skills-container {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    text-align: justify;
+    width: 100vw;
+    padding-bottom: 3%;
+    gap: 2vw;
+  }
+ 
+  .bars-box {
+    display: flex;
+    align-items: center;
+    gap:4%;
+    margin-bottom: 20px;
+    flex-direction: column;
+    width: 15%;
+    margin-left: 8%;
+    margin-right: 8%;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    box-shadow: 0.3vw 0.2vw 0.2vw 0.2vw#9b909098;
+     /* Adjust as needed */
+}
+
+.bars-box:hover{
+  transform: scale(1.03);
+  background-color: #e63556;
+  box-shadow:0.4vw 0.2vw 0.2vw 0.2vw #ffc3c3f5;  
+}
+
+.skill-css {
+    max-width: 20%;
+    margin-left: 20%;
+    height: auto; /* Adjust the maximum width of the icon */
+    margin-right: 45px; /* Adjust the spacing between icon and text */
+}
+
+h3 {
+    margin: 0; 
+    font-size: 1.4vw;/* Remove default margin for h3 */
+}
+
+  
