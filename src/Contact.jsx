@@ -16,7 +16,7 @@ const Contact = () => {
       }, (error) => {
         console.log(error.text);
         setMessage(`Error: ${error.text}`);
-      });
+      }); 
   };
 
   return (
@@ -31,11 +31,11 @@ const Contact = () => {
           <form ref={form} onSubmit={sendEmail}>
           <div className="form-group">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required/>
+            <input type="text" id="name" name="from_name" required/>
         
     
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required/>
+            <input type="email" id="email" name="to_email" required/>
         
         
            
