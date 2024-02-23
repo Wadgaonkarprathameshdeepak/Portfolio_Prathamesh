@@ -1,54 +1,59 @@
-import React, { useRef, useState } from "react";
-import "./CSS/Contact.css";
-import emailjs from '@emailjs/browser';
-import conn from "./images/conn.avif"
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import './CSS/Contact.css';
+import p1 from './1.png';
+
 const Contact = () => {
-  const form = useRef();
-  const [message, setMessage] = useState("");
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_p0mvsa9', 'template_eqba2i4', form.current, 'DkrGWmkS1aX137gD3')
-      .then((result) => {
-        console.log(result.text);
-        setMessage("Email sent successfully!");
-      }, (error) => {
-        console.log(error.text);
-        setMessage(`Error: ${error.text}`);
-      }); 
-  };
-
   return (
-    <div className="Contact-main">
-      <div className="contact-container">
-        <div className="contact-image">
-          <img src={conn} alt="Contact" />
-        </div>
-        <div className="contact-form-container">
-          {message && <h2 className={`message ${message.includes("Error") ? "error" : "success"}`}>{message}</h2>}
-          <h2><b>Get In Touch</b></h2>
-          <form ref={form} onSubmit={sendEmail}>
-          <div className="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="from_name" required/>
-        
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="from_email" required/>
-        
-        
-           
-        
-        
-            <label for="message">Message</label>
-            <input type="message" id="message" name="message"  required/>
-        </div>
-        <button className="bttnn" type="submit">Submit</button>
+    <div>
+      <Helmet>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+      </Helmet>
+      <section className="contact" id="contact">
+      <h2 id="contact-heading" className="heading">
+      <i className="fas fa-headset"></i> Contact  <span className="heading-span"> Us</span>
+        </h2>
 
-          </form>
+        <div className="container">
+          <div className="content">
+            <div className="image-box">
+              <img draggable="false" src={p1} alt="" />
+            </div>
+            <div className="contact-form">
+              <div className="form-group">
+                <div className="field">
+                <i className="fas fa-user"></i>
+                  <input type="text" name="name" placeholder="Name" required />
+                  
+                </div>
+                <div className="field">
+                  <input type="text" name="email" placeholder="Email" required />
+                  <i className="fas fa-envelope"></i>
+                </div>
+                <div className="field">
+                  <input type="text" name="phone" placeholder="Phone" />
+                  <i className="fas fa-phone-alt"></i>
+                </div>
+                <div className="message">
+                  <textarea placeholder="Message" name="message" required></textarea>
+                  <i className="fas fa-comment-dots"></i>
+                </div>
+              </div>
+              <div className="button-area">
+                <button type="submit">
+                  Submit <i className="fa fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
