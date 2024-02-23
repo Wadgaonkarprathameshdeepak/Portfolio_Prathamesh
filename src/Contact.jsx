@@ -35,7 +35,7 @@ const Contact = () => {
         
     
             <label for="email">Email:</label>
-            <input type="email" id="email" name="to_email" required/>
+            <input type="email" id="email" name="from_email" required/>
         
         
            
